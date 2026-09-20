@@ -1,8 +1,8 @@
 /* The shared workspace header already names Create Ride. */
 :root[data-theme='dark'] .app.dark,:root[data-theme='dark'] .public-page.dark{background:var(--bg-primary);color:var(--text-primary)}
-:root[data-theme='bright'] .app:not(.dark),:root[data-theme='bright'] .public-page:not(.dark){background:var(--bg-primary);color:var(--text-primary)}
+:root[data-theme='light'] .app:not(.dark),:root[data-theme='light'] .public-page:not(.dark){background:var(--bg-primary);color:var(--text-primary)}
 :root[data-theme='dark'] .button.dark{background:#e47d55;color:#171a18}
-:root[data-theme='bright'] .button.dark{background:#242521;color:#fff}
+:root[data-theme='light'] .button.dark{background:#242521;color:#fff}
 :root[data-theme='dark'] .profile-menu{background:var(--bg-elevated);color:var(--text-primary);border-color:var(--border-color)}
 :root[data-theme='dark'] .side-help{background:#303830}
 .organizer-form .form-section h2{display:none}
@@ -58,3 +58,562 @@
 .public-page.dark .metrics div{border-color:var(--public-border)}
 .organizer-stats{grid-template-columns:repeat(6,1fr)}.organizer-dashboard-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:15px}.organizer-wide{grid-row:span 2}.organizer-ride-card,.request-mini,.participant-actions>div{display:flex;align-items:center;gap:11px;padding:14px 0;border-top:1px solid #eceae2}.organizer-ride-card:first-of-type,.request-mini:first-of-type{border-top:0}.organizer-ride-card>div,.request-mini span,.participant-actions span{display:grid;gap:3px;flex:1}.organizer-ride-card small,.request-mini small,.participant-actions small{color:#85877e;font-size:10px}.organizer-ride-card em,.request-mini em,.ride-item-meta em{font-style:normal;color:#568461;font-size:10px}.ride-status-dot{width:8px;height:8px;border-radius:50%;background:#e47d55}.request-mini>b,.participant-actions>b{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#d3e3d6;color:#41604b;font-size:10px}.participation-total{display:flex;align-items:baseline;gap:8px}.participation-total strong{font:600 32px 'Space Grotesk'}.participation-total span{font-size:11px;color:#777970}.organizer-form{max-width:850px;display:grid;gap:15px}.form-section{display:grid;grid-template-columns:1fr 1fr;gap:15px;padding:24px;background:#fffefa;border:1px solid #e3e1d8;border-radius:6px}.form-section .eyebrow,.form-section h2{grid-column:1/-1}.form-section h2{font:600 25px 'Space Grotesk';margin:0}.form-section label{display:grid;gap:7px;font-size:11px;font-weight:700}.form-section input,.form-section select,.form-section textarea{width:100%;border:1px solid #d8d7cf;background:transparent;padding:12px;border-radius:4px}.form-section textarea{min-height:80px;resize:vertical}.form-actions{display:flex;justify-content:flex-end;gap:10px}.organizer-ride-list,.request-list{display:grid;gap:12px}.organizer-ride-item,.request-card{background:#fffefa;border:1px solid #e3e1d8;border-radius:6px;padding:22px}.ride-code{color:#e47d55;font-size:10px;letter-spacing:1px;font-weight:700}.organizer-ride-item h3{font:600 18px 'Space Grotesk';margin:8px 0}.organizer-ride-item p,.request-card p{color:#777970;font-size:11px}.ride-item-meta{display:flex;align-items:center;gap:18px;margin:17px 0;border-top:1px solid #eceae2;border-bottom:1px solid #eceae2;padding:12px 0;font-size:11px}.ride-item-meta span{color:#777970}.ride-item-actions,.request-actions{display:flex;gap:8px;flex-wrap:wrap}.ride-item-actions .button,.request-actions .button{font-size:10px;padding:9px 12px}.request-person{display:flex;align-items:center;gap:11px}.request-person>b{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#d3e3d6;color:#41604b}.request-person span{display:grid;gap:3px;flex:1}.request-person small{color:#85877e;font-size:10px}.request-person em{font-style:normal;color:#e47d55;font-size:10px;font-weight:700}.request-card blockquote{margin:15px 0;padding:12px;background:#f5f4ef;color:#777970;font-size:12px}.participant-summary{display:flex;align-items:baseline;gap:10px;margin-bottom:15px;padding:20px;background:#dce8dc;border-radius:6px}.participant-summary strong{font:600 32px 'Space Grotesk'}.participant-summary span{font-size:12px;color:#57705b}.participant-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}.participant-actions>div{padding:15px;border:1px solid #e3e1d8;background:#fffefa;border-radius:5px}.schedule-toolbar{display:flex;justify-content:space-between;align-items:end;margin-bottom:20px}.schedule-toolbar h2{font:600 28px 'Space Grotesk';margin:8px 0 0}.calendar-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.calendar-day{min-height:230px;padding:15px;background:#fffefa;border:1px solid #e3e1d8;border-radius:6px}.calendar-day.full{border-top:3px solid #e47d55}.calendar-day header{display:grid;gap:5px;border-bottom:1px solid #eceae2;padding-bottom:14px}.calendar-day header small{color:#85877e;font-size:10px}.calendar-event{display:grid;gap:9px;margin-top:18px;padding:12px;background:#f2e4dc;border-left:3px solid #e47d55}.calendar-event span{font-size:10px;color:#c56542}.calendar-event strong{font:600 13px 'Space Grotesk'}.calendar-event small{color:#777970;font-size:10px}.organizer-chat{display:grid;grid-template-columns:280px 1fr;height:570px;background:#fffefa;border:1px solid #e3e1d8;border-radius:6px;overflow:hidden}.organizer-chat aside{border-right:1px solid #e3e1d8;padding:10px}.organizer-chat aside button{display:flex;align-items:center;gap:10px;width:100%;border:0;background:transparent;text-align:left;padding:13px;border-radius:4px}.organizer-chat aside button.selected{background:#f4e5de}.organizer-chat aside b{display:grid;place-items:center;width:33px;height:33px;border-radius:50%;background:#d3e3d6;color:#41604b}.organizer-chat aside span{display:grid;gap:3px;flex:1}.organizer-chat aside small{color:#85877e;font-size:10px}.organizer-chat aside em{color:#e47d55;font-style:normal}.notification-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.dark .form-section,.dark .organizer-ride-item,.dark .request-card,.dark .participant-actions>div,.dark .calendar-day,.dark .organizer-chat{background:#222622;border-color:#3c413b}.dark .request-card blockquote,.dark .calendar-event{background:#30372f}.dark .form-section input,.dark .form-section select,.dark .form-section textarea{border-color:#51584e;color:#f5f3eb}
 @media(max-width:1000px){.organizer-stats{grid-template-columns:repeat(3,1fr)}.calendar-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:700px){.organizer-stats{grid-template-columns:repeat(2,1fr)}.organizer-dashboard-grid,.calendar-grid{grid-template-columns:1fr}.organizer-wide{grid-row:auto}.form-section{grid-template-columns:1fr}.participant-actions{grid-template-columns:1fr}.organizer-chat{grid-template-columns:1fr;height:auto}.organizer-chat aside{display:flex;overflow:auto;border-right:0;border-bottom:1px solid #e3e1d8}.organizer-chat aside button{min-width:190px}.organizer-chat .chat{min-height:500px}.schedule-toolbar{display:block}.schedule-toolbar .tabs{margin-top:15px}}
+
+/* Shared theme contract: legacy page styles resolve through these tokens. */
+:root {
+	--background: #f7f8f6;
+	--surface: #ffffff;
+	--surface-secondary: #f0f2ee;
+	--surface-hover: #e8ebe6;
+	--surface-selected: #dce5dd;
+	--surface-tertiary: #f0f2ee;
+	--border: #d6dad5;
+	--text-primary: #172019;
+	--text-secondary: #4d574f;
+	--text-muted: #69736b;
+	--primary: #e96f43;
+}
+
+:root[data-theme='dark'] {
+	--background: #101310;
+	--surface: #181d19;
+	--surface-secondary: #202620;
+	--surface-hover: #252c26;
+	--surface-selected: #39443b;
+	--surface-tertiary: #242c26;
+	--border: #343b35;
+	--text-primary: #f5f7f5;
+	--text-secondary: #b9c1ba;
+	--text-muted: #8e9890;
+	--primary: #f0784a;
+	--header-control-bg: #202620;
+	--header-control-hover: #293129;
+	--header-control-border: #3a433b;
+	--header-control-text: #f5f7f5;
+}
+
+:root[data-theme='light'] {
+	--header-control-bg: #ffffff;
+	--header-control-hover: #f0f2ee;
+	--header-control-border: #d6dad5;
+	--header-control-text: #172019;
+}
+
+html,
+body,
+#root {
+	background: var(--background);
+	color: var(--text-primary);
+}
+
+:root[data-theme='dark'] .app,
+:root[data-theme='dark'] .public-page,
+:root[data-theme='dark'] .roles-page,
+:root[data-theme='dark'] .auth-page,
+:root[data-theme='dark'] .workspace,
+:root[data-theme='dark'] .work {
+	background: var(--background);
+	color: var(--text-primary);
+}
+
+:root[data-theme='dark'] .panel,
+:root[data-theme='dark'] .stat-card,
+:root[data-theme='dark'] .form-panel,
+:root[data-theme='dark'] .form-section,
+:root[data-theme='dark'] .organizer-ride-item,
+:root[data-theme='dark'] .request-card,
+:root[data-theme='dark'] .role-card,
+:root[data-theme='dark'] .auth-card,
+:root[data-theme='dark'] .profile-menu,
+:root[data-theme='dark'] .modal,
+:root[data-theme='dark'] .chat-shell,
+:root[data-theme='dark'] .chat,
+:root[data-theme='dark'] .table,
+:root[data-theme='dark'] .trip-row,
+:root[data-theme='dark'] .match-row,
+:root[data-theme='dark'] .notification-list,
+:root[data-theme='dark'] .sa-panel,
+:root[data-theme='dark'] .sa-kpi,
+:root[data-theme='dark'] .sa-detail-modal,
+:root[data-theme='dark'] .sa-ride-details {
+	background-color: var(--surface);
+	color: var(--text-primary);
+	border-color: var(--border);
+}
+
+:root[data-theme='dark'] .notification-list .notification,
+:root[data-theme='dark'] .notification-list .notification.unread {
+	background: var(--surface-secondary);
+	color: var(--text-primary);
+	border-color: var(--border);
+}
+
+:root[data-theme='dark'] .notification-list .notification.unread {
+	background: var(--surface-hover);
+	border-left-color: var(--primary);
+}
+
+:root[data-theme='dark'] input,
+:root[data-theme='dark'] select,
+:root[data-theme='dark'] textarea,
+:root[data-theme='dark'] .table-row,
+:root[data-theme='dark'] .table-row.head {
+	background-color: var(--surface-secondary);
+	color: var(--text-primary);
+	border-color: var(--border);
+}
+
+:root[data-theme='dark'] .table-row.head {
+	background-color: var(--surface-hover);
+	color: var(--text-secondary);
+}
+
+:root[data-theme='dark'] .panel p,
+:root[data-theme='dark'] .section-heading p,
+:root[data-theme='dark'] .detail-line span,
+:root[data-theme='dark'] .setting-row small,
+:root[data-theme='dark'] .notification small,
+:root[data-theme='dark'] .notification button,
+:root[data-theme='dark'] .profile-menu,
+:root[data-theme='dark'] .auth-card p,
+:root[data-theme='dark'] .roles-heading p {
+	color: var(--text-secondary);
+}
+
+:root[data-theme='dark'] .ghost,
+:root[data-theme='dark'] .toggle,
+:root[data-theme='dark'] .data-row button {
+	border-color: var(--border);
+	color: var(--text-primary);
+}
+
+:root[data-theme='dark'] .profile-menu a:hover,
+:root[data-theme='dark'] .profile-menu button:hover {
+	background: var(--surface-hover);
+	color: var(--primary);
+}
+
+::selection {
+	background: var(--primary);
+	color: #101310;
+}
+
+.profile-cover h2,
+.profile-cover p,
+.profile-cover > b {
+	opacity: 1;
+}
+
+:root[data-theme='light'] .profile-cover {
+	background: #dce8da;
+	color: #172019;
+}
+
+:root[data-theme='light'] .profile-cover h2 {
+	color: #172019;
+}
+
+:root[data-theme='light'] .profile-cover p {
+	color: #405047;
+}
+
+:root[data-theme='dark'] .profile-cover {
+	background: var(--surface-secondary);
+	color: var(--text-primary);
+	border: 1px solid var(--border);
+}
+
+:root[data-theme='dark'] .profile-cover h2 {
+	color: var(--text-primary);
+}
+
+:root[data-theme='dark'] .profile-cover p {
+	color: var(--text-secondary);
+}
+
+/* Opaque shared controls keep the workspace header readable above every page. */
+.header-controls {
+	position: relative;
+	z-index: 20;
+}
+
+.header-controls > button,
+.header-controls .profile-chip,
+.nav-actions > button {
+	background: var(--header-control-bg) !important;
+	border: 1px solid var(--header-control-border) !important;
+	color: var(--header-control-text) !important;
+	opacity: 1 !important;
+}
+
+.header-controls > button:hover,
+.header-controls .profile-chip:hover,
+.nav-actions > button:hover {
+	background: var(--header-control-hover) !important;
+	border-color: var(--primary) !important;
+	color: var(--header-control-text) !important;
+}
+
+.header-controls .profile-chip {
+	min-width: 58px;
+	min-height: 36px;
+	padding: 8px 11px;
+	border-radius: 6px;
+}
+
+.header-controls .profile-chip::first-letter {
+	color: var(--text-primary);
+}
+
+.profile-menu {
+	z-index: 50;
+	background: var(--surface) !important;
+	border: 1px solid var(--border) !important;
+	color: var(--text-primary) !important;
+	opacity: 1 !important;
+	box-shadow: 0 16px 36px rgba(16, 19, 16, 0.28);
+}
+
+.profile-menu a,
+.profile-menu button {
+	background: var(--surface) !important;
+	color: var(--text-primary) !important;
+	opacity: 1 !important;
+}
+
+.profile-menu a:hover,
+.profile-menu button:hover {
+	background: var(--surface-hover) !important;
+	color: var(--primary) !important;
+}
+
+.mobile-menu {
+	background: var(--surface-secondary);
+	border: 1px solid var(--border);
+	color: var(--text-primary);
+	opacity: 1;
+	z-index: 30;
+}
+
+.sidebar .logout-link,
+.button.ghost,
+.toggle,
+.data-row button,
+.data-grid button {
+	background: var(--surface-secondary);
+	border: 1px solid var(--border);
+	color: var(--text-primary);
+	opacity: 1;
+}
+
+input,
+select,
+textarea,
+.form-section input,
+.form-section select,
+.form-section textarea,
+.auth-card input {
+	background: var(--surface-secondary);
+	color: var(--text-primary);
+	border-color: var(--border);
+	opacity: 1;
+}
+
+.sidebar .logout-link:hover,
+.button.ghost:hover,
+.toggle:hover,
+.data-row button:hover,
+.data-grid button:hover {
+	background: var(--surface-hover);
+	border-color: var(--primary);
+	color: var(--text-primary);
+}
+
+.sidebar,
+.sidebar .brand,
+.sidebar .workspace-user,
+.sidebar .sidebar-content,
+.sidebar .sidebar-bottom {
+	background: var(--sidebar-bg) !important;
+	color: var(--sidebar-text) !important;
+	opacity: 1 !important;
+}
+
+/* Conversation surfaces use the same opaque semantic layers in every role. */
+.chat-shell,
+.organizer-chat,
+.chat-shell > aside,
+.organizer-chat > aside,
+.chat-shell > .chat,
+.organizer-chat > .chat {
+	background: var(--surface) !important;
+	color: var(--text-primary) !important;
+	border-color: var(--border) !important;
+	opacity: 1 !important;
+}
+
+.chat-shell > aside,
+.organizer-chat > aside {
+	background: var(--surface-secondary) !important;
+	border-right: 1px solid var(--border) !important;
+}
+
+.chat-shell aside button,
+.organizer-chat aside button {
+	background: var(--surface-secondary) !important;
+	border: 1px solid var(--border) !important;
+	color: var(--text-primary) !important;
+	opacity: 1 !important;
+}
+
+.chat-shell aside button:hover,
+.chat-shell aside button.selected,
+.organizer-chat aside button:hover,
+.organizer-chat aside button.selected {
+	background: var(--surface-selected) !important;
+	border-color: var(--border) !important;
+	color: var(--text-primary) !important;
+}
+
+.chat-shell aside button span,
+.organizer-chat aside button span,
+.chat-shell aside button small,
+.organizer-chat aside button small {
+	color: var(--text-secondary) !important;
+}
+
+.chat-shell aside button em,
+.organizer-chat aside button em {
+	color: var(--primary) !important;
+}
+
+.chat-messages p.received,
+.organizer-chat .chat-messages p.received {
+	background: var(--surface-hover) !important;
+	border: 1px solid var(--border) !important;
+	color: var(--text-primary) !important;
+	opacity: 1 !important;
+}
+
+.chat-messages p.sent,
+.organizer-chat .chat-messages p.sent {
+	background: var(--primary) !important;
+	border: 1px solid var(--primary) !important;
+	color: #ffffff !important;
+	opacity: 1 !important;
+}
+
+.chat-shell .chat form,
+.organizer-chat .chat form {
+	background: var(--surface) !important;
+	border-top: 1px solid var(--border) !important;
+}
+
+.chat-shell .chat form input,
+.organizer-chat .chat form input {
+	background: var(--surface-secondary) !important;
+	border: 1px solid var(--border) !important;
+	color: var(--text-primary) !important;
+	opacity: 1 !important;
+}
+
+/* Organizer participant surfaces stay inside the shared theme hierarchy. */
+.participant-summary {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	margin-bottom: 18px;
+	padding: 22px 24px;
+	background: var(--surface-secondary);
+	border: 1px solid var(--border);
+	border-radius: 6px;
+	color: var(--text-secondary);
+	opacity: 1;
+}
+
+.participant-summary strong {
+	font: 600 34px 'Space Grotesk';
+	color: var(--text-primary);
+}
+
+.participant-summary span {
+	color: var(--text-secondary);
+}
+
+.participant-table .table {
+	background: var(--surface) !important;
+	border: 1px solid var(--border);
+	color: var(--text-primary);
+}
+
+.participant-table .table-row {
+	background: var(--surface-secondary) !important;
+	border-top-color: var(--border) !important;
+	color: var(--text-primary);
+}
+
+.participant-table .table-row.head {
+	background: var(--surface-tertiary, var(--surface-hover)) !important;
+	color: var(--text-secondary) !important;
+}
+
+.participant-table .table-row:hover {
+	background: var(--surface-hover) !important;
+}
+
+.participant-table .table-row > span {
+	color: var(--text-primary);
+}
+
+.participant-table .table-row.head > span,
+.participant-table .table-row > span:nth-last-child(-n + 2) {
+	color: var(--text-secondary);
+}
+
+.participant-table .table-row > span:last-child {
+	color: #bfe0ca;
+	font-weight: 700;
+}
+
+:root[data-theme='dark'] .participant-summary {
+	background: #26352c;
+	border-color: #435247;
+}
+
+:root[data-theme='dark'] .participant-summary strong {
+	color: #f3f6f3;
+}
+
+:root[data-theme='dark'] .participant-summary span {
+	color: #b8c2ba;
+}
+
+:root[data-theme='dark'] .participant-table .table-row {
+	background: #1c231e !important;
+	border-top-color: #354039 !important;
+}
+
+:root[data-theme='dark'] .participant-table .table-row.head {
+	background: #242c26 !important;
+	color: #b8c2ba !important;
+}
+
+:root[data-theme='dark'] .participant-table .table-row:hover {
+	background: #29332c !important;
+}
+
+:root[data-theme='dark'] .participant-table .table-row > span {
+	color: #f3f6f3;
+}
+
+:root[data-theme='dark'] .participant-table .table-row > span:nth-last-child(-n + 2) {
+	color: #b8c2ba;
+}
+
+:root[data-theme='dark'] .participant-table .table-row > span:last-child {
+	background: #294238;
+	border: 1px solid #3c5a49;
+	border-radius: 4px;
+	color: #bfe0ca;
+	padding: 4px 7px;
+	justify-self: start;
+}
+
+.admin-table .table-row {
+	grid-template-columns: repeat(7, minmax(110px, 1fr));
+	align-items: center;
+	gap: 12px;
+}
+
+.admin-table .table-row > span {
+	min-width: 0;
+	color: var(--text-primary);
+}
+
+.admin-table .table-row strong,
+.admin-table .table-row small {
+	display: block;
+}
+
+.admin-table .table-row small {
+	margin-top: 4px;
+	color: var(--text-secondary);
+	font-size: 10px;
+}
+
+.admin-badge {
+	display: inline-block;
+	width: fit-content;
+	padding: 5px 8px;
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	background: var(--surface-secondary);
+	color: var(--text-secondary);
+	font-size: 10px;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.admin-badge.verified,
+.admin-badge.approved,
+.admin-badge.active,
+.admin-badge.resolved,
+.admin-badge.low {
+	background: #294238;
+	border-color: #3c5a49;
+	color: #bfe0ca;
+}
+
+.admin-badge.pending,
+.admin-badge.pending-review,
+.admin-badge.medium,
+.admin-badge.upcoming,
+.admin-badge.under-review,
+.admin-badge.in-progress {
+	background: #4b4128;
+	border-color: #74633a;
+	color: #f0d99a;
+}
+
+.admin-badge.rejected,
+.admin-badge.suspended,
+.admin-badge.high,
+.admin-badge.cancelled {
+	background: #4a2c2b;
+	border-color: #70403d;
+	color: #f2b2aa;
+}
+
+.admin-review-grid {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.review-card {
+	display: grid;
+	gap: 12px;
+}
+
+.review-card h3,
+.review-card p {
+	margin: 0;
+}
+
+@media(max-width: 900px) {
+	.admin-review-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.admin-table .table-row {
+		grid-template-columns: repeat(4, minmax(120px, 1fr));
+	}
+}
+
+@media(max-width: 620px) {
+	.admin-review-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.admin-table .table-row {
+		grid-template-columns: repeat(2, minmax(120px, 1fr));
+	}
+}

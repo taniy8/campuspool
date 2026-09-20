@@ -1,0 +1,17 @@
+export const currentUser = {
+  name: 'Riya Kapoor',
+  initials: 'RK',
+  college: 'ABES Institute of Technology',
+  verified: true,
+  course: 'B.Tech CSE',
+  year: 2,
+  rating: 4.8,
+  completedRides: 15,
+  moneySaved: 1800,
+  preferredPickup: 'Raj Nagar',
+  about: 'I prefer punctual, respectful rides and clear pickup plans.',
+  email: 'riya0@campus.edu',
+  preferredPickupArea: 'Raj Nagar',
+  preferredDepartureTime: '7:30 AM',
+  bio: 'I prefer punctual, respectful rides and clear pickup plans.',
+}

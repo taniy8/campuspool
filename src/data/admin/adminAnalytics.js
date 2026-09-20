@@ -1,0 +1,3 @@
+export const adminAnalytics = Array.from({ length: 30 }, (_, index) => ({ date: `Jun ${index + 1}`, activeStudents: 620 + index * 7 + index % 4 * 12, rides: 180 + index * 5 + index % 6 * 9, completedRides: 150 + index * 4, cancelledRides: 10 + index % 7, averageMatchScore: 82 + index % 10, moneySaved: 18000 + index * 850, safetyIncidents: 1 + index % 4 }))
+export const pickupAreas = [['Raj Nagar', 286], ['Indirapuram', 241], ['Vaishali', 198], ['Vasundhara', 174], ['Noida Sector 62', 149]]
+export const activeRoutes = [['Raj Nagar → ABES', 186], ['Indirapuram → KIET', 154], ['Vaishali → IMS', 129], ['Vasundhara → KIET', 112]]
