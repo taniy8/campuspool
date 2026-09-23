@@ -1,0 +1,60 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: campus-commute-backend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/campus_commute
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  mail:
+    host: ${MAIL_HOST:smtp.gmail.com}
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USERNAME:}
+    password: ${MAIL_PASSWORD:}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+app:
+  jwt:
+    # In production, load this from an environment variable / secrets manager, never commit it.
+    secret: ${JWT_SECRET:change-this-to-a-long-random-secret-key-of-at-least-256-bits-please}
+    access-token-expiration-ms: 3600000        # 1 hour
+    refresh-token-expiration-ms: 604800000     # 7 days
+
+  # Comma-separated list of email domains allowed to register (your college domain(s)).
+  allowed-email-domains: ${ALLOWED_EMAIL_DOMAINS:college.edu,college.ac.in}
+
+  # Matching engine tuning
+  matching:
+    max-distance-km: 2.0          # how close origin/destination points must be to count as "same route"
+    max-time-window-minutes: 30   # how close departure times must be
+
+  frontend:
+    base-url: ${FRONTEND_BASE_URL:http://localhost:5173}
+
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173,http://localhost:3000}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs

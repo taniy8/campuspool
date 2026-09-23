@@ -1,0 +1,19 @@
+# Spins up a local PostgreSQL instance for development.
+# Run: docker compose up -d
+version: "3.8"
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: campus-commute-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: campus_commute
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - campus_commute_data:/var/lib/postgresql/data
+
+volumes:
+  campus_commute_data:
